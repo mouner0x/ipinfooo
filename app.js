@@ -12,7 +12,7 @@ app.get("/",async (req,res)=>{
 
 const data = await fetch((`https://ipapi.co/${req.headers['x-forwarded-for']}/json/`))
 const dataJson = await data.json()
-res.status(200).json(data)
+res.status(200).json(dataJson)
 
 
 
